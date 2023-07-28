@@ -6,7 +6,7 @@ public class Atividade3
         System.out.println("Calculadora idade em dias");
         Scanner sc = new Scanner(System.in);
         
-         // Obter valor de Ano
+         /// Obter valor de Ano
         int anos;
         System.out.print("Digite quantos anos voce tem: ");
         anos = sc.nextInt();
