@@ -18,9 +18,15 @@ public class Atividade2 {
         System.out.print("Digite a quantidade pedida: ");
         int quantidadeItem = scanner.nextInt();
         scanner.nextLine(); // Limpar o buffer do Scanner
+        if (quantidadeItem < 0) {
+            quantidadeItem = 0;
+        }
 
         System.out.print("Digite o valor do produto: ");
         double valorItem = scanner.nextDouble();
+        if (valorItem < 0) {
+            valorItem = 0;
+        }
 
         Invoice invoice = new Invoice (numeroPedido,descricaoItem,quantidadeItem,valorItem);
 

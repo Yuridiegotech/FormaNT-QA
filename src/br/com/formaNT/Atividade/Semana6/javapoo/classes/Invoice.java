@@ -36,11 +36,7 @@ public class Invoice {
     }
 
     public void setQuantidadeItem(int quantidadeItem) {
-        if(quantidadeItem < 0){
             this.quantidadeItem = quantidadeItem;
-        }else{
-            this.quantidadeItem = 0;
-        }
     }
 
     public double getValorItem() {
@@ -48,11 +44,7 @@ public class Invoice {
     }
 
     public void setValorItem(double valorItem) {
-        if(valorItem < 0){
-            this.valorItem = valorItem;
-        }else{
-            this.valorItem = 0.0;
-        }
+        this.valorItem = valorItem;
     }
 
     public double getInvoiceAmount(){
