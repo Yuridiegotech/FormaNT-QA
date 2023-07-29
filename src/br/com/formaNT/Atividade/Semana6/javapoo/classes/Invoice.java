@@ -51,7 +51,7 @@ public class Invoice {
        if (valorItem > 0 ) {
            this.valorItem = valorItem;
        }else{
-           this.valorItem = 0;
+           this.valorItem = 0.0;
        }
        }
 
