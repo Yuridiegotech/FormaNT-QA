@@ -2,10 +2,10 @@ package br.com.formaNT.Atividade.Semana6.javapoo.classes;
 
 public class Empregado {
 
-    String nome;
-    String sobrenome;
+    private String nome;
+    private  String sobrenome;
 
-    double salario;
+    private double salario;
 
     public Empregado(String nome, String sobrenome, double salario) {
         this.nome = nome;
