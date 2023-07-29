@@ -1,4 +1,4 @@
-package br.com.formaNT.Atividade.Semana6;
+package br.com.formaNT.Atividade.Semana6.javainicial;
 import java.util.Scanner;
 
 public class Atividade1 {
