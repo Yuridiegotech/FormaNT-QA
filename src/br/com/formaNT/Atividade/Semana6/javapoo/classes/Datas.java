@@ -35,6 +35,24 @@ public class Datas {
         return true;
     }
 
+    //Avançar data
+
+    public void avançarDia(){
+        if (dia < 31){
+            this.dia = dia + 1;
+        }else{
+            this.dia = 01;
+            if(mes == 12){
+                this.mes = 01;
+                this.ano = ano + 1;
+            }else {
+                this.mes = mes + 1;
+            }
+            this.ano = ano;
+        }
+
+    }
+
 
     public int getDia() {
         return dia;
