@@ -1,5 +1,5 @@
 package br.com.formaNT.Atividade.Semana6.javapoo;
-
+import java.util.Scanner;
 import br.com.formaNT.Atividade.Semana6.javapoo.classes.Datas;
 
 public class Atividade5 {
@@ -7,33 +7,75 @@ public class Atividade5 {
 
     public static void main(String[] args) {
 
-        //testando construtor
-        Datas data = new Datas(31, 12, 2023);
-        System.out.println("Data 1: " + data);
+
+        Scanner sc = new Scanner(System.in);
+
+        int opcao;
+        System.out.println("Digite 1 para informar uma data");
+        System.out.println("Digite 2 para ver uma data atual");
+        System.out.print("Opção: ");
+        opcao = sc.nextInt();
 
 
-        int dataDia = data.getDia();
-        int dataMes = data.getMes();
-        int dataAno = data.getAno();
+        int dia = 0;
+        int mes = 0;
+        int ano = 0;
+        if (opcao == 1) {
 
-        System.out.println("teste data dia"+dataDia);
-        //Testar avançar dia
+            System.out.print("Digite o Dia desejado: ");
+            dia = sc.nextInt();
 
-        data.avançarDia();
+            System.out.print("Digite o Mes desejado: ");
+            mes = sc.nextInt();
 
-        System.out.println("Data avançada: " + data);
+            System.out.print("Digite o Ano desejado: ");
+            ano = sc.nextInt();
+            System.out.println("------------------------------");
+            System.out.println("A Data informada é "+dia+"/"+mes+"/"+ano);
+            System.out.println("------------------------------");
+
+
+        } else if (opcao == 2) {
+            Datas dataAtual = new Datas(); // Usando o construtor padrão para obter a data atual
+            dia = dataAtual.getDia();
+            mes = dataAtual.getMes();
+            ano = dataAtual.getAno();
+            System.out.println("A Data atual é: " + dataAtual);
+        }else{
+            throw new IllegalArgumentException("opção inválida!");
+        }
+
+        //Chamando construtor
+        Datas data = new Datas(dia, mes, ano);
 
 
 
 
-        //Puxa dia atual
-        Datas dataAtual = new Datas();
-        System.out.println("Data 3 (atual): " + dataAtual);
+        System.out.println("------------------------------");
+
+
+        System.out.println("Deseja Usar a função de avançar dia ? ");
+        int avancar;
+        System.out.println("Digite 1 usar a função");
+        System.out.println("Digite 2 para encerrar o programa");
+        System.out.print("Opção: ");
+        avancar = sc.nextInt();
+
+        if (avancar == 1){
+            data.avançarDia();
+
+            System.out.println("Data avançada: " + data);
+
+
+        } else {
+            System.out.println("Programa Encerrado");
+        }
+
+
+
+
+
+
+
     }
-
-    // Testando construtor
-
-
-
-
 }
