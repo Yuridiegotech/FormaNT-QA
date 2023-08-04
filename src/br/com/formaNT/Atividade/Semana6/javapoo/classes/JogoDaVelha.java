@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class JogoDaVelha {
 
-    private Ocupacao[][] grade;
+    public static void main(String[] args) {
+
+    }
 
 }
