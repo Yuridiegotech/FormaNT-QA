@@ -31,5 +31,17 @@ public class Campo {
         this.simbolo = " ";
         this.estaVazio = true;
     }
+    public String toString(){
+        if (this.estaVazio) return "-";
+        else return this.simbolo;
+    }
+
+    public boolean simboloIgual(Campo c){
+        if(this.simbolo.equals(c.getSimbolo()) && this.estaVazio == false){
+            return true;
+        }else{
+            return false;
+        }
+    }
 
 }
