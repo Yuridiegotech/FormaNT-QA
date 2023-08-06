@@ -1,7 +1,8 @@
 package br.com.formaNT.Atividade.Semana6.javapoo.classes;
 
-public enum Ocupacao {
+public enum EstadoCasa {
     VAZIA,
-    JOGADOR1,
-    JOGADOR2
+    X,
+    O
+
 }
